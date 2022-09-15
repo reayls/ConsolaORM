@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mibdModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="persona">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="edad" Type="int" Nullable="false" />
+    <Property Name="idsexo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sexo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombresexo" Type="varchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_persona_sexo1">
+    <End Role="sexo" Type="Self.sexo" Multiplicity="1" />
+    <End Role="persona" Type="Self.persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sexo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="persona">
+        <PropertyRef Name="idsexo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="mibdModelStoreContainer">
+    <EntitySet Name="persona" EntityType="Self.persona" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sexo" EntityType="Self.sexo" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_persona_sexo1" Association="Self.FK_persona_sexo1">
+      <End Role="sexo" EntitySet="sexo" />
+      <End Role="persona" EntitySet="persona" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

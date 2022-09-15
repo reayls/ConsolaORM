@@ -1,0 +1,11 @@
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\obj\Debug\ConsolaORM.csproj.CoreCompileInputs.cache
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\bin\Debug\ConsolaORM.exe.config
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\bin\Debug\ConsolaORM.exe
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\bin\Debug\ConsolaORM.pdb
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\bin\Debug\EntityFramework.dll
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\bin\Debug\EntityFramework.xml
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\obj\Debug\ConsolaORM.csproj.CopyComplete
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\obj\Debug\ConsolaORM.exe
+C:\Users\Deary\Documents\Proyectos de .net\ConsolaORM\ConsolaORM\obj\Debug\ConsolaORM.pdb
